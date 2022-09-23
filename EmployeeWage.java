@@ -29,5 +29,8 @@ public class EmployeeWage {
         }
         int wage = wagePerHour*empHour; // UC2 to calculate the daily wage for present employee
         System.out.println("Employee Wage for one day is: "+wage);
+
+
+
     }
 }
