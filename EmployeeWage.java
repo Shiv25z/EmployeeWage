@@ -12,13 +12,13 @@ public class EmployeeWage {
         int n = r.nextInt(3);
         int wagePerHour = 20;
         int empHour ;
-
+        // UC4 Switch case used to check employee attendance status
         switch(n){ // UC1 to check the Employee is present or absent using RANDOM class.
             case 0:
                 empHour=8;
                 System.out.println("Employee is Present for "+empHour+" hours. ");
                 break;
-            case 1:// UC3 to add employee hours present for part time 
+            case 1:// UC3 to add employee hours present for part time
                 empHour=4;
                 System.out.println("Employee present for part time for "+empHour+" hours. ");
                 break;
