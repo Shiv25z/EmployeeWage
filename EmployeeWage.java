@@ -9,7 +9,7 @@ public class EmployeeWage {
 
         Random r = new Random();
         Scanner sc =new Scanner(System.in);
-        int n = r.nextInt(2);
+        int n = r.nextInt(3);
         int wagePerHour = 20;
         int empHour ;
 
@@ -17,6 +17,10 @@ public class EmployeeWage {
             case 0:
                 empHour=8;
                 System.out.println("Employee is Present for "+empHour+" hours. ");
+                break;
+            case 1:// UC3 to add employee hours present for part time 
+                empHour=4;
+                System.out.println("Employee present for part time for "+empHour+" hours. ");
                 break;
 
             default:
