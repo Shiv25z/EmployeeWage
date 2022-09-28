@@ -4,14 +4,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class EmployeeWage {
-    public static void main(String[] args) {
-        System.out.println("Welcome to Employee Wage Calculation Program!");
+    static Random r = new Random();
+    static Scanner sc =new Scanner(System.in);
 
-        Random r = new Random();
-        Scanner sc =new Scanner(System.in);
+    static int wagePerHour = 20;
+    static int empHour ;
+
+    public static void WageCalculation(){
         int n = r.nextInt(3);
-        int wagePerHour = 20;
-        int empHour ;
+
         // UC4 Switch case used to check employee attendance status
         switch(n){ // UC1 to check the Employee is present or absent using RANDOM class.
             case 0:
@@ -37,7 +38,7 @@ public class EmployeeWage {
         System.out.println("Employee this month salary will be : "+monthlyWage);
 
         System.out.println("");//uc6 to check if the Employee working hours or days meets the company requirements
-        System.out.println(""); // i.e. working days atleast should be 20 in a month or minimum of 100 working hours
+        // i.e. working days atleast should be 20 in a month or minimum of 100 working hours
         if (workDays >=20 || monthlyHour >=100){
             System.out.println("Worker Satisfies the payscale condition.");
             System.out.println("The Final Salary will be credited to Workers  bank account is: "+monthlyWage);
@@ -46,6 +47,15 @@ public class EmployeeWage {
             System.out.println("Worker did not satisfies the payscale condition.");
             System.out.println("Worker needs to work for more hour or minimum for 20 days. ");
         }
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Welcome to Employee Wage Calculation Program!");
+
+        WageCalculation();
+
+
 
 
 
